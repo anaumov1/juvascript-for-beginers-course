@@ -179,7 +179,7 @@ console.log(student.studentInfo());
 // 18-35 is my target demographic
 // && AND
 // || OR
-let age = prompt('what is your age?');
+let age = 45
 
 if ((age >= 18) && (age <= 35)) {
     status = 'target demo';
@@ -193,6 +193,26 @@ if ((age >= 18) && (age <= 35)) {
 
 // Switch statements
 // differentiate between errkday vs. weekend
+// day 0 Sunday
+// day 6 Saturday
+// day 4 - Thursday - weekday
+
+switch (2) {
+    case 0:
+        text = 'weekend';
+        break;
+    case 5:
+        text = 'weekend';                    // we give brakes after evet line because...
+        break                                // this is a loop and we want to brake it...
+    case 6:                                  // so it defaults to search again after each statement
+        text = 'weekend'; 
+        break;
+    default:
+        text = 'weekday';
+}
+
+console.log(text);
+
 
 
 
